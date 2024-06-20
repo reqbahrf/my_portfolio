@@ -42,4 +42,21 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
 }
 
+@media (max-width: 768px) {
+  #nav-links {
+    
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(31, 41, 55, 0.9); /* Tailwind's bg-gray-900 with opacity */
+    position: absolute; /* Position it absolutely */
+    top: 100%; /* Position it below the nav bar */
+    left: 0; /* Align it to the left */
+  }
+  #nav-links a {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  
+}
 

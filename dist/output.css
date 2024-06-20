@@ -779,16 +779,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .box-border {
@@ -890,40 +890,36 @@ video {
   display: none;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-48 {
+  height: 12rem;
 }
 
-.h-full {
-  height: 100%;
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[350px\] {
+  height: 350px;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-\[320px\] {
-  height: 320px;
+.w-5 {
+  width: 1.25rem;
 }
 
-.h-\[200px\] {
-  height: 200px;
+.w-6 {
+  width: 1.5rem;
 }
 
-.h-\[3200px\] {
-  height: 3200px;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.w-\[390px\] {
-  width: 390px;
+.w-\[280px\] {
+  width: 280px;
 }
 
 .w-\[this-is\\\\\] {
@@ -944,10 +940,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .flex-1 {
@@ -1804,6 +1796,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[40px\] {
+  border-radius: 40px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2063,12 +2059,17 @@ video {
      object-fit: scale-down;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-3 {
@@ -2268,6 +2269,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2695,6 +2701,26 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  #nav-links {
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(31, 41, 55, 0.9);
+    /* Tailwind's bg-gray-900 with opacity */
+    position: absolute;
+    /* Position it absolutely */
+    top: 100%;
+    /* Position it below the nav bar */
+    left: 0;
+    /* Align it to the left */
+  }
+
+  #nav-links a {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2735,6 +2761,11 @@ body {
   font-weight: 700;
 }
 
+.hover\:text-green-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2743,6 +2774,11 @@ body {
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:hover\:text-center:hover:focus {
@@ -2762,20 +2798,33 @@ body {
     display: flex;
   }
 
+  .sm\:h-\[355px\] {
+    height: 355px;
+  }
+
+  .sm\:w-\[290px\] {
+    width: 290px;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
 
-  .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  .sm\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .sm\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .sm\:underline {
@@ -2792,8 +2841,35 @@ body {
     margin: 10rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
@@ -2804,5 +2880,4 @@ body {
     }
   }
 }
-
 
