@@ -396,8 +396,12 @@
         <section id="sectionPin">
           <div class="pin-wrap-sticky shadow-xl bg-gray-900 bg-opacity-70">
             <div class="pin-wrap">
-              <div class="flex p-0 h-1/4 w-52 sm:h-2/4 sm:w-1/4 md:h-2/4 md:w-1/4 items-center">
-                <h1 class="text-lg sm:text-3xl md:text-3xl font-bold text-white">
+              <div
+                class="flex p-0 h-1/4 w-52 sm:h-2/4 sm:w-1/4 md:h-2/4 md:w-1/4 items-center"
+              >
+                <h1
+                  class="text-lg sm:text-3xl md:text-3xl font-bold text-white"
+                >
                   lerem Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna
                   aliqua.
@@ -797,6 +801,7 @@
         >
           <div
             class="flex flex-col items-center justify-center w-[280px] h-[350px] sm:w-[290px] sm:h-[355px] rounded-[40px] overflow-hidden shadow-lg bg-gray-800"
+            id="javaProjectConta"
           >
             <img
               class="w-full h-48 object-cover"
@@ -810,9 +815,9 @@
               <p class="text-white text-base mb-4">
                 Description of the Java Application Project.
               </p>
-              <a
-                href="#"
+              <button
                 class="text-green-500 hover:text-green-400 flex items-center"
+                id="viewJavaProject"
               >
                 View Full Details
                 <svg
@@ -827,9 +832,10 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
+         
           <div
             class="flex flex-col items-center justify-center w-[280px] h-[350px] sm:w-[290px] sm:h-[355px] rounded-[40px] overflow-hidden shadow-lg bg-gray-800"
           >
@@ -901,6 +907,34 @@
             </div>
           </div>
         </div>
+        <!-- Project Modal  Start -->
+        <div id="javaProjectModal" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <!-- Second div content goes here -->
+            <div
+            class="flex flex-col overflow-x-hidden items-center w-screen h-screen bg-gray-800"
+           >
+            <img
+              class="w-full h-2/4 object-cover blur-sm"
+              src="/assest/Java_project/slide1.png"
+              alt="Java Project"
+            />
+            <div class="flex flex-col space-y-5 p-4 w-full h-full px-10 bg-gray-800 z-10">
+              <div class="flex flex-col items-center py-40 space-y-10 bg-gray-800 z-10">
+                <img src="/assest/Java_project/slide1.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Java_project/slide2.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Java_project/slide3.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Java_project/slide4.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Java_project/slide5.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Java_project/slide6.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+       
+         <!-- Project Modal end  -->
       </section>
     </div>
     <div class="flex flex-col items-center justify-center bg-gray-900 bottom-0">
