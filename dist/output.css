@@ -902,6 +902,10 @@ video {
   height: 350px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -2866,23 +2870,17 @@ body {
 }
 
 .modal-content {
-  background-color: #fefefe;
   margin: 0;
-  /* Remove auto margin */
   padding: 0;
-  /* Remove padding */
   border: none;
-  /* Remove border */
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  /* Enable vertical scrolling */
+  background-color: #1f2937;
 }
 
 .close-button {
@@ -2892,7 +2890,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: #000;
-  z-index: 1;
+  z-index: 20;
 }
 
 .close-button:hover,
@@ -2905,21 +2903,64 @@ body {
   0% {
     transform: scale(0);
     opacity: .6;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
+    border-radius: 40px;
   }
 
   100% {
     transform: scale(1);
     opacity: 1;
+    border-radius: 0px;
   }
 }
 
 .modal.show-modal {
   display: block;
-  animation: pop-up 0.3s ease-out;
+  animation: pop-up 0.3s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+}
+
+.Project-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-image: url('/assest/Java_project/slide1.png');
+  background-size: cover;
+  background-position: 50% 0;
+  background-blend-mode: soft-light;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: calc(4vw + 1em);
+  align-content: center;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.mainContent{
+  padding-top: 110vh;
+  transition: all 2s;
+  z-index: 1;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.is-sticky .Project-header {
+  background-position: 50% 100%;
+  background-color: #0b1584;
+  height: 10vh;
+  font-size: 2em;
+  z-index: 2;
+}
+
+.is-sticky .mainContent {
+  padding-top: calc(90px + 10vh) !important;
 }
 
 @media (min-width: 640px) {
@@ -3141,6 +3182,8 @@ body {
     }
   }
 }
+
+
 
 
 

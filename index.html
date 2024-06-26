@@ -818,6 +818,7 @@
               <button
                 class="text-green-500 hover:text-green-400 flex items-center"
                 id="viewJavaProject"
+                data-modal-target="javaProjectModal"
               >
                 View Full Details
                 <svg
@@ -851,9 +852,11 @@
               <p class="text-white text-base mb-4">
                 Description of the Figma Projects.
               </p>
-              <a
+              <button
                 href="#"
                 class="text-green-500 hover:text-green-400 flex items-center"
+                id="viewFigmaProject"
+                data-modal-target="FigmaProjectModal"
               >
                 View Full Details
                 <svg
@@ -868,7 +871,7 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           <div
@@ -886,9 +889,11 @@
               <p class="text-white text-base mb-4">
                 Description of the Photo Editor Projects.
               </p>
-              <a
+              <button
                 href="#"
                 class="text-green-500 hover:text-green-400 flex items-center"
+                id="viewPhotoProject"
+                data-modal-target="PhotoProjectModal"
               >
                 View Full Details
                 <svg
@@ -903,31 +908,73 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </div>
         <!-- Project Modal  Start -->
         <div id="javaProjectModal" class="modal">
+          <div id="javaProjectModalContent" class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="flex flex-col overflow-x-hidden items-center w-screen h-screen" id="JavaProjectModal">
+              <div class="Project-header">POS Java Project</div>
+              <div class="flex flex-col space-y-5 p-4 w-full px-10 mainContent">
+                <div class="flex flex-col items-center py-40 h-auto space-y-10">
+                  <img src="/assest/Java_project/slide1.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                  <img src="/assest/Java_project/slide2.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                  <img src="/assest/Java_project/slide3.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                  <img src="/assest/Java_project/slide4.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                  <img src="/assest/Java_project/slide5.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                  <img src="/assest/Java_project/slide6.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="FigmaProjectModal" class="modal">
           <div class="modal-content">
             <span class="close-button">&times;</span>
             <!-- Second div content goes here -->
             <div
-            class="flex flex-col overflow-x-hidden items-center w-screen h-screen bg-gray-800"
+            class="flex flex-col overflow-x-hidden items-center w-screen h-screen"
            >
             <img
               class="w-full h-2/4 object-cover blur-sm"
-              src="/assest/Java_project/slide1.png"
+              src="/assest/Figma_project/slide1.png"
               alt="Java Project"
             />
-            <div class="flex flex-col space-y-5 p-4 w-full h-full px-10 bg-gray-800 z-10">
-              <div class="flex flex-col items-center py-40 space-y-10 bg-gray-800 z-10">
-                <img src="/assest/Java_project/slide1.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
-                <img src="/assest/Java_project/slide2.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
-                <img src="/assest/Java_project/slide3.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
-                <img src="/assest/Java_project/slide4.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
-                <img src="/assest/Java_project/slide5.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
-                <img src="/assest/Java_project/slide6.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+            <div class="flex flex-col space-y-5 p-4 w-full h-full px-10 z-10">
+              <div class="flex flex-col items-center py-40 space-y-10 z-10">
+                <img src="/assest/Figma_project/slide1.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Figma_project/slide2.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Figma_project/slide3.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Figma_project/slide4.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Figma_project/slide5.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Figma_project/slide6.png" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="PhotoProjectModal" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <!-- Second div content goes here -->
+            <div
+            class="flex flex-col overflow-x-hidden items-center w-screen h-screen"
+           >
+            <img
+              class="w-full h-2/4 object-cover blur-sm"
+              src="/assest/Photo_project/slide1.jpg"
+              alt="Java Project"
+            />
+            <div class="flex flex-col space-y-5 p-4 w-full h-full px-10 z-10">
+              <div class="flex flex-col items-center py-40 space-y-10 z-10">
+                <img src="/assest/Photo_project/slide1.jpg" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Photo_project/slide2.jpg" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Photo_project/slide3.jpg" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
+                <img src="/assest/Photo_project/slide4.jpg" class="w-4/5 sm:w-1/2 md:w-1/2" alt="">
               </div>
             </div>
           </div>
