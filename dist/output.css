@@ -2726,7 +2726,7 @@ video {
 }
 
 body {
-  background-image: url('/assest/img/wallhaven-2.jpg');
+  background-image: url('../assest/img/wallhaven-2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -2921,7 +2921,7 @@ body {
   color: #fff;
   height: 100vh;
   width: 100%;
-  background-image: url('/assest/Java_project/slide1.png');
+  background-image: url('../assest/Java_project/slide1.png');
   background-size: cover;
   background-position: 50% 0;
   background-blend-mode: soft-light;
@@ -2946,7 +2946,7 @@ body {
   color: #fff;
   height: 100vh;
   width: 100%;
-  background-image: url('/assest/Figma_project/slide1.png');
+  background-image: url('../assest/Figma_project/slide1.png');
   background-size: cover;
   background-position: 50% 0;
   background-blend-mode: soft-light;
@@ -2971,7 +2971,7 @@ body {
   color: #fff;
   height: 100vh;
   width: 100%;
-  background-image: url('/assest/Photo_project/slide1.jpg');
+  background-image: url('../assest/Photo_project/slide1.jpg');
   background-size: cover;
   background-position: 50% 0;
   background-blend-mode: soft-light;
