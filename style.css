@@ -360,7 +360,7 @@ body {
 }
 
 .is-sticky .mainContent {
-  padding-top: calc(90px + 10vh) !important;
+  padding-top: calc(90px + 20vh) !important;
 }
 
 
