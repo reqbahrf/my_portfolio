@@ -771,6 +771,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -2197,6 +2201,10 @@ video {
   text-align: end;
 }
 
+.indent-8 {
+  text-indent: 2rem;
+}
+
 .align-baseline {
   vertical-align: baseline;
 }
@@ -2259,12 +2267,13 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-semibold {
@@ -2599,8 +2608,19 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .ring-inset {
   --tw-ring-inset: inset;
+}
+
+.ring-pink-700 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(190 24 93 / var(--tw-ring-opacity));
 }
 
 .blur {
@@ -2786,7 +2806,7 @@ body {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 10px solid #111827;
+  border: 2px solid #9E2359;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
