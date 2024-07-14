@@ -46,9 +46,9 @@
     </div>
     <div>
       <section id="Home">
-        <div class="h-screen flex justify-center items-center">
+        <div class="h-screen flex justify-center items-center hero">
           <div
-            class="flex flex-col-reverse sm:flex-row md:flex-row h-2/4 w-auto border-y-black shadow-xl bg-gray-900 bg-opacity-70 px-10 py-5 sm:px-40 md:px-40"
+            class="flex flex-col-reverse sm:flex-row md:flex-row h-2/4 w-auto px-10 py-5 sm:px-40 md:px-40"
           >
             <div class="flex flex-col justify-center space-y-5">
               <div>
@@ -1194,5 +1194,23 @@
         </p>
       </div>
     </div>
+    <script>
+      // JavaScript code to hide/show the navigation bar on scroll
+let lastScrollTop = 0; // Keep track of the last scroll position
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (currentScroll > lastScrollTop) {
+    // Scrolling down
+    document.querySelector('.border-y-black').classList.add('hidden');
+  } else {
+    // Scrolling up
+    document.querySelector('.border-y-black').classList.remove('hidden');
+  }
+  
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+}, false);
+    </script>
   </body>
 </html>

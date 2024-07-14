@@ -735,10 +735,6 @@ video {
   margin: 0px;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .m-5 {
   margin: 1.25rem;
 }
@@ -2133,10 +2129,6 @@ video {
   padding: 1rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2157,9 +2149,14 @@ video {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -2180,16 +2177,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .ps-5 {
@@ -2807,16 +2794,25 @@ video {
 }
 
 body {
-  background-image: url('../assest/img/wallhaven-2.jpg');
+  background-image: url('../assest/img/body.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-blend-mode: hard-light;
 }
 
 .container {
   position: relative;
   width: 100vw;
+}
+
+.hero{
+  background-image: url('../assest/img/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5vh;
 }
 
 #avatar {
@@ -2855,7 +2851,7 @@ body {
 #sectionPin {
   /* Stretch it out, so that we create room for the horizontal scroll animation */
   height: 500vh;
-  overflow: visible;
+  overflow-y: visible;
   /* To make position sticky work … */
   view-timeline-name: --section-pin-tl;
   view-timeline-axis: block;
@@ -2868,7 +2864,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: sticky;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
   top: 0;
   overflow-x: hidden;
 }

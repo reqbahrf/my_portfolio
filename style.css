@@ -24,15 +24,26 @@
   border: 3px solid  rgba(0, 0, 0, 0.5);
 }
 body {
-  background-image: url('../assest/img/wallhaven-2.jpg');
+  background-image: url('../assest/img/body.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-blend-mode: hard-light;
 }
 .container {
   position: relative;
   width: 100vw;
+}
+
+.hero{
+  background-image: url('../assest/img/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5vh;
+
+
 }
 
 
@@ -71,7 +82,7 @@ body {
 #sectionPin {
   /* Stretch it out, so that we create room for the horizontal scroll animation */
   height: 500vh;
-  overflow: visible; /* To make position sticky work … */
+  overflow-y: visible; /* To make position sticky work … */
   view-timeline-name: --section-pin-tl;
   view-timeline-axis: block;
   background: var(--text-color);
@@ -83,7 +94,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: sticky;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
   top: 0;
   overflow-x: hidden;
 }
