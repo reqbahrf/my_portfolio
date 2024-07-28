@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (javaProjectModal) {
     javaProjectModal.addEventListener("scroll", function () {
       const currentScroll = javaProjectModal.scrollTop;
-      console.log("JavaProjectModal current scroll position:", currentScroll);
 
       if (currentScroll > 0) {
         javaProjectModal.classList.add(toggle);
@@ -72,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (figmaProjectModal) {
     figmaProjectModal.addEventListener("scroll", function () {
       const currentScroll = figmaProjectModal.scrollTop;
-      console.log("FigmaProjectModal current scroll position:", currentScroll);
 
       if (currentScroll > 0) {
         figmaProjectModal.classList.add(toggle);
@@ -85,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (PhotoProjectModal) {
     PhotoProjectModal.addEventListener("scroll", function () {
       const currentScroll = PhotoProjectModal.scrollTop;
-      console.log("PhotoProjectModal current scroll position:", currentScroll);
 
       if (currentScroll > 0) {
         PhotoProjectModal.classList.add(toggle);
